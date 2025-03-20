@@ -1,7 +1,11 @@
 :root {
   --dark-mode: #242424;
-  --light-mode: grey;
-  --bg-color:var(--dark-mode)
+  --light-mode: rgb(174, 173, 173);
+  --bg-color: var(--light-mode);
+
+  --light-mode-text: black;
+  --dark-mode-text: white;
+  --text-color: var(--light-mode-text)
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,6 +16,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: var(--bg-color);
+  color: var(--text-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -34,8 +39,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-
-  
 }
 
 h1 {
